@@ -1,5 +1,4 @@
-pagina de una cafeteria,se solicito lon siguiente para crearla : Hola chicos , como estan ? para los que no pudieron asistir a las clases presenciales  les dejo la consigna y la actividad que realizamos !  
-Si quieren tambien los que ya la realizaron  pueden  subir sus avances a github y compartir lo que hicieron!
+pagina de una cafeteria,se solicito lo siguiente para crearla : 
 
 📄 Consigna "Un cliente se comunica con ustedes porque quiere tener presencia online para su negocio. Les deja el siguiente mensaje:"
 
