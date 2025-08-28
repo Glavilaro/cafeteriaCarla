@@ -1,81 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cafetería Carla - Café de especialidad y pastelería artesanal en Buenos Aires">
     <title>Cafetería Carla | Café y pastelería artesanal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 
 <body>
-    <header>
-        <h1>Cafetería Carla</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#menu">Menú</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Cafetería Carla</h1>
+                <span class="tagline">Café de especialidad</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#menu" class="nav-link">Menú</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section class="inicio" id="inicio">
-            <img src="./imagenes/cafeteria1.jpg" alt="Imagen del local">
-            <div class="descripcion">
-                <h2>Nosotros</h2>
-                <p>Somos Una acogedora cafetería que ofrece café de especialidad y pastelería artesanal.</p>
+        <section class="hero" id="inicio">
+            <div class="hero-image">
+                <img src="./imagenes/cafeteria1.jpg" alt="Interior acogedor de Cafetería Carla">
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Bienvenidos a Cafetería Carla</h2>
+                    <p class="hero-description">Descubre el arte del café de especialidad y la pastelería artesanal en el corazón de Buenos Aires.</p>
+                    <a href="#menu" class="cta-button">Ver Menú</a>
+                </div>
             </div>
         </section>
 
-        <section class="menu" id="menu">
-            <h2>Menú</h2>
-            <div class="productos">
-                <article>
-                    <img src="./imagenes/cafe.jpg" alt="Café expreso caliente">
-                    <h3>Café</h3>
-                    <p>Un expreso perfectamente preparado</p>
-                </article>
-                <article>
-                    <img src="./imagenes/medialunas.jpg" alt="Medialunas recien preparadas">
-                    <h3>Medialunas</h3>
-                    <p>Una medialuna dulce y hojaldrada</p>
-                </article>
-                <article>
-                    <img src="./imagenes/tostados.jpg" alt="Tostado de jamon y queso">
-                    <h3>Tostados</h3>
-                    <p>Pan crujiente con jamón y queso derretido</p>
-                </article>
+        <section class="about" id="nosotros">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nuestra Historia</h2>
+                    <p class="section-subtitle">Pasión por el café desde 2010</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Somos una acogedora cafetería que ofrece café de especialidad y pastelería artesanal. Nuestro compromiso es brindar experiencias únicas a través de sabores auténticos y un ambiente cálido.</p>
+                        <div class="features">
+                            <div class="feature">
+                                <i class="fas fa-coffee"></i>
+                                <span>Café de origen único</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-heart"></i>
+                                <span>Hecho con amor</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-leaf"></i>
+                                <span>Ingredientes frescos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="contacto" id="contacto">
-            <h2>Contacto</h2>
-            <div class="horarios">
-                <p>📍 Calle dorrego 123, Buenos Aires</p>
-                <p>🕐 Lunes a Sábados de 8:00 a 19:00</p>
+        <section class="menu-section" id="menu">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nuestro Menú</h2>
+                    <p class="section-subtitle">Sabores que despiertan los sentidos</p>
+                </div>
+                <div class="menu-grid">
+                    <article class="menu-item">
+                        <div class="menu-image">
+                            <img src="./imagenes/cafe.jpg" alt="Café expreso artesanal">
+                        </div>
+                        <div class="menu-content">
+                            <h3 class="menu-title">Café de Especialidad</h3>
+                            <p class="menu-description">Un expreso perfectamente preparado con granos seleccionados de las mejores regiones cafetaleras.</p>
+                            <span class="menu-price">$450</span>
+                        </div>
+                    </article>
+                    <article class="menu-item">
+                        <div class="menu-image">
+                            <img src="./imagenes/medialunas.jpg" alt="Medialunas artesanales">
+                        </div>
+                        <div class="menu-content">
+                            <h3 class="menu-title">Medialunas Artesanales</h3>
+                            <p class="menu-description">Medialunas dulces y hojaldradas, horneadas diariamente con mantequilla de la mejor calidad.</p>
+                            <span class="menu-price">$380</span>
+                        </div>
+                    </article>
+                    <article class="menu-item">
+                        <div class="menu-image">
+                            <img src="./imagenes/tostados.jpg" alt="Tostados gourmet">
+                        </div>
+                        <div class="menu-content">
+                            <h3 class="menu-title">Tostados Gourmet</h3>
+                            <p class="menu-description">Pan artesanal crujiente con jamón serrano y queso manchego derretido.</p>
+                            <span class="menu-price">$520</span>
+                        </div>
+                    </article>
+                </div>
             </div>
+        </section>
 
+        <section class="contact" id="contacto">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Visítanos</h2>
+                    <p class="section-subtitle">Te esperamos para compartir una experiencia única</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Calle Dorrego 123, Palermo<br>Buenos Aires, Argentina</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horarios</h4>
+                                <p>Lunes a Sábados<br>8:00 - 19:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Reservas</h4>
+                                <p>+54 11 1234-5678</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-<footer>
-    <div class="footer-info">
-        <p>Seguinos:</p>
-        <a href="https://instagram.com/cafeteriacarla" target="_blank" rel="noopener">
-            <i class="fab fa-instagram"></i> Instagram
-        </a> 
-        <a href="https://facebook.com/cafeteriacarla" target="_blank" rel="noopener">
-            <i class="fab fa-facebook-f"></i> Facebook
-        </a>
-    </div>
-    <p>&copy; 2025 Cafetería de Carla</p>
-</footer>
-
-
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cafetería Carla</h3>
+                    <p>Creando momentos especiales a través del café y la pastelería artesanal.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/cafeteriacarla" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/cafeteriacarla" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/cafeteriacarla" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cafetería Carla. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
